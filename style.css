@@ -1,0 +1,40 @@
+.welcome {
+  width: 100%;
+  background-image: url('http://placekitten.com/1200/600');
+  background-size: cover;
+  height: 600px;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  width: 80%;
+  margin: auto;
+}
+
+.vert-line {
+  position: relative;
+}
+
+.vert-line .dot {
+  background-color: red;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  z-index: 2;
+}
+
+.vert-line .line {
+  border-left: 4px solid black;
+  height: 100%;
+  width:4px;
+  position: absolute;
+  left: 50%;
+  top:0;
+  z-index: 1;
+}
+
+.timeline div {
+  height: 150px;
+  overflow:visible;
+}
